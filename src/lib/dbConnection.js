@@ -1,9 +1,8 @@
 import mongoose from "mongoose";
-import dotenv from "dotenv";
-dotenv.config();
+
 export async function dbConnection() {
     try {
-        const connection = await mongoose.connect(process.env.DB_URL);
+        const connection = await mongoose.connect("mongodb+srv://eventify:eventify123456789@eventify.krex1.mongodb.net/");
         console.log("Database is connected");
     }
     catch (error) {

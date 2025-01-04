@@ -8,7 +8,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger } from "@/components/u
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { TypographyH2 } from "@/components/ui/typography";
 import Link from "next/link";
-import { Switch } from "@/components/ui/switch"
 import axios from "axios";
 
 export default function RegisterForm() {
