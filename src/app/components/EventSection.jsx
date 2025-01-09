@@ -16,7 +16,7 @@ export default function Home() {
                     </TypographyParagraph>
                 </div>
 
-                <div className="mt-8 w-11/12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 place-items-center gap-10">
+                <div className="mt-8 w-11/12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 place-items-center gap-10">
                     {/* Testimonial 1 */}
                     <div className="w-96 p-6 bg-gray-800 rounded-lg hover:shadow-md hover:shadow-slate-50 hover:scale-105 duration-300">
                         <img className="w-28 h-28 object-cover object-center animate-bounce duration-2000 mx-auto mb-10 rounded-full" src="https://www.phdmedia.com/hungary/wp-content/uploads/sites/61/2015/05/temp-people-profile.jpg" />

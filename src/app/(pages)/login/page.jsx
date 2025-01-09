@@ -43,7 +43,7 @@ export default function LoginForm() {
     };
 
     return (
-        <div className="flex w-full justify-center items-center min-h-screen bg-gradient-to-r from-teal-500 to-sky-500 ">
+        <div className="flex w-full justify-center items-center min-h-screen">
             <div className=" w-3/4 max-w-lg mx-auto p-6 bg-white shadow-lg rounded-md border">
                 <TypographyH2 className="text-center text-xl mb-4">Login</TypographyH2>
 

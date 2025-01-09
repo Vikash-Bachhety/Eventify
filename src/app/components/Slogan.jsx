@@ -23,7 +23,7 @@ export default function Slogan() {
 
         {/* Stylish Registration Button */}
         <Button className="relative overflow-hidden bg-rose-600 text-white px-6 py-5 rounded-md group">
-          <Link href="/registrationEvent"><span className="absolute inset-0 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+          <Link href="/events"><span className="absolute inset-0 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
             <span className="relative z-10"> Register for an Event</span></Link>
         </Button>
       </div>

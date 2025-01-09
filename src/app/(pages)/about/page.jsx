@@ -11,7 +11,7 @@ const AboutUs = () => {
       <div className="relative w-full z-10 flex flex-col md:flex-row items-center justify-center text-center md:text-left mt-20 px-6 md:px-12 py-10 text-white space-y-10 md:space-x-10">
 
         {/* Mission Section */}
-        <div className="max-w-3xl py-10 bg-black/20 rounded-lg px-6 border-2 rounded-bl-3xl rounded-tr-3xl border-white animate-pulse md:w-1/3">
+        <div className="max-w-3xl py-10 bg-black/20  rounded-bl-3xl rounded-tr-3xl px-6 border-2 border-white animate-pulse lg:w-1/2">
           <div className="flex items-center justify-center md:justify-start space-x-4 mb-6">
             <FaBullhorn className="text-4xl text-indigo-100" />
             <h2 className="text-3xl md:text-4xl font-semibold">Our Mission</h2>
@@ -28,7 +28,7 @@ const AboutUs = () => {
         </div>
 
         {/* Vision Section */}
-        <div className="max-w-3xl py-10 bg-black/20 rounded-bl-3xl rounded-tr-3xl px-6 border-2 border-white animate-pulse md:w-1/3">
+        <div className="max-w-3xl py-10 bg-black/20  rounded-bl-3xl rounded-tr-3xl px-6 border-2 border-white animate-pulse lg:w-1/2">
           <div className="flex items-center justify-center md:justify-start space-x-4 mb-6">
             <FaGlobeAmericas className="text-4xl text-indigo-100" /> {/* React Icon for Vision */}
             <h2 className="text-3xl md:text-4xl font-semibold">Our Vision</h2>
@@ -53,7 +53,7 @@ const AboutUs = () => {
       <div className="relative w-full z-10 flex flex-col md:flex-row items-center justify-center text-center md:text-left mt-20 px-6 md:px-12 py-10 text-white space-y-10 md:space-x-10">
 
         {/* Values Section */}
-        <div className="max-w-3xl py-10 bg-black/20  rounded-bl-3xl rounded-tr-3xl px-6 border-2 border-white animate-pulse md:w-1/2">
+        <div className="max-w-3xl py-10 bg-black/20  rounded-bl-3xl rounded-tr-3xl px-6 border-2 border-white animate-pulse lg:w-1/2">
           <div className="flex items-center justify-center md:justify-start space-x-4 mb-6">
             <FaHandsHelping className="text-4xl text-indigo-100" /> {/* React Icon for Values */}
             <h2 className="text-3xl md:text-4xl font-semibold">Our Values</h2>
@@ -67,7 +67,7 @@ const AboutUs = () => {
         </div>
 
         {/* Team Section */}
-        <div className="max-w-3xl py-10 bg-black/20 rounded-bl-3xl rounded-tr-3xl px-6 border-2 border-white animate-pulse md:w-1/2">
+        <div className="max-w-3xl py-10 bg-black/20 rounded-bl-3xl rounded-tr-3xl px-6 border-2 border-white animate-pulse lg:w-1/2">
           <div className="flex items-center justify-center md:justify-start space-x-4 mb-6">
             <FaUsers className="text-4xl text-indigo-100" /> {/* React Icon for Team */}
             <h2 className="text-3xl md:text-4xl font-semibold">Our Team</h2>

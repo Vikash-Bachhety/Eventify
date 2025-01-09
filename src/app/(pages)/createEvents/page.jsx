@@ -90,7 +90,7 @@ export default function CreateEventPage() {
   };
 
   return (
-    <div className="py-16 bg-gradient-to-r from-teal-500 to-sky-500">
+    <div className="py-16">
       <div className="container mx-auto px-6 md:px-12 lg:px-24 mt-10">
         {/* Header Section */}
         <div className="text-center">

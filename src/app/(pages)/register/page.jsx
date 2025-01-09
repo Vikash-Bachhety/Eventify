@@ -63,7 +63,7 @@ export default function RegisterForm() {
     };
 
     return (
-        <div className="flex w-full min-h-screen bg-gradient-to-r from-teal-500 to-sky-500 ">
+        <div className="flex w-full min-h-screen">
             <div className=" w-11/12 max-w-lg mx-auto my-10 p-6 bg-white shadow-lg rounded-md border">
                 <TypographyH2 className="text-center text-2xl mb-4">Sign Up</TypographyH2>
 

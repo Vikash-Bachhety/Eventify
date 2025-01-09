@@ -32,7 +32,7 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-center text-center h-full">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white">
-            Experience the Best Live Music Events
+            Experience the Best Live <span className="text-red-500">Music</span> Events
           </h1>
           <p className="mt-4 text-lg md:text-xl lg:text-2xl text-gray-300 max-w-2xl">
             Discover, explore, and book your favorite music performances in one place.

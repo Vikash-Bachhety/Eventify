@@ -44,7 +44,7 @@ const Events = () => {
   }
 
   return (
-    <section className="py-20">
+    <section className="py-28">
 
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-50 mb-10">
@@ -58,7 +58,7 @@ const Events = () => {
           </div>
         ) : (
           <>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
+            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-14">
               {currentEvents.map((event) => (
                 <Card key={event._id} className="bg-white h-[580px] hover:shadow-md hover:shadow-black rounded-lg overflow-hidden hover:-skew-y-3 duration-300">
                   {/* Event Image */}

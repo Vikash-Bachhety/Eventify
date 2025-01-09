@@ -1,6 +1,30 @@
 import mongoose from "mongoose";
 
 const eventRegistrationSchema = new mongoose.Schema({
+    eventName: {
+        type: String,
+        required: true,
+    },
+    eventDate: {
+        type: String,
+        required: true,
+    },
+    eventImage: {
+        type: String,
+        required: true,
+    },
+    eventPrice: {
+        type: String,
+        required: true,
+    },
+    eventLocation: {
+        type: String,
+        required: true,
+    },
+    eventArtist: {
+        type: String,
+        required: true,
+    },
     name: {
         type: String,
         required: true,

@@ -6,8 +6,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+::selection {
+  color: #60f4ff;
+}
+
 @layer base {
   :root {
     --radius: 0.5rem;
   }
 }
+
