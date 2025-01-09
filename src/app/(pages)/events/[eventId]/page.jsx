@@ -9,7 +9,7 @@ import { jwtDecode } from "jwt-decode";
 const EventDetailsPage = () => {
   const [event, setEvent] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [razorpayLoaded, setRazorpayLoaded] = useState(false); // Track if Razorpay is loaded
+  const [razorpayLoaded, setRazorpayLoaded] = useState(false);
   const params = useParams();
   const [userId, setUserId] = useState();
 
@@ -63,7 +63,6 @@ const EventDetailsPage = () => {
       alert("Razorpay is still loading. Please try again shortly.");
       return;
     }
-
     try {
       // Request an order creation from the server
       const { data } = await axios.post("/api/razorpay", {
@@ -72,7 +71,7 @@ const EventDetailsPage = () => {
 
       // Initialize Razorpay checkout
       const options = {
-        key: "rzp_test_q6nOYqgj9SUHrd", // Your Razorpay Key ID
+        key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID, // Your Razorpay Key ID
         amount: event.ticketPrice * 100, // Amount in paise
         currency: "INR",
         order_id: data.orderId, // The order ID returned from your server
@@ -123,7 +122,7 @@ const EventDetailsPage = () => {
   };
 
   return (
-    <div className="w-full flex justify-center items-center min-h-screen px-10">
+    <div className="w-full flex justify-center items-center min-h-screen px-6 py-28">
       {loading ? (
         <div className="flex justify-center items-center min-h-[600px]">
           <ScaleLoader color="#ffffff" height={80} width={20} margin={8} radius={10} loading={loading} size={50} />
@@ -138,7 +137,7 @@ const EventDetailsPage = () => {
             />
           </div>
           <div className="text-center md:text-left md:w-1/2 md:pl-8 flex flex-col justify-center">
-            <h1 className="text-3xl font-bold mb-4">{event.eventName}</h1>
+            <h1 className="text-md lg:text-3xl font-bold mb-4">{event.eventName}</h1>
             <p className="text-gray-600 italic mb-4">{event.eventType}</p>
             <p className="text-gray-800 mb-4">
               <strong>Date:</strong> {event.eventDate}
